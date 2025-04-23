@@ -2,7 +2,7 @@
 
    Function:
    1. Send GPS data from a HELTEC WIRELESS TRACKER (esp32) device over RF
-   https://github.com/rapbando
+   https://github.com/rapbando/HELTEC-LoRaSender-GPS-TRACKER
  * */
 #include "LoRaWan_APP.h"
 #include "Arduino.h"
