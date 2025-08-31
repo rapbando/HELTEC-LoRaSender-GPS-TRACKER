@@ -24,7 +24,7 @@ double Bat_threshold = 3.3;
 
 #define Vext 3
 
-#define RF_FREQUENCY                                868100000 // Hz
+#define RF_FREQUENCY                                868125000 // Hz
 
 #define TX_OUTPUT_POWER                             21        // dBm
 
@@ -32,19 +32,19 @@ double Bat_threshold = 3.3;
                                                               //  1: 250 kHz,
                                                               //  2: 500 kHz,
                                                               //  3: Reserved]
-#define LORA_SPREADING_FACTOR                       7         // [SF7..SF12]
+#define LORA_SPREADING_FACTOR                       11         // [SF7..SF12]
 #define LORA_CODINGRATE                             4         // [1: 4/5,
                                                               //  2: 4/6,
                                                               //  3: 4/7,
                                                               //  4: 4/8]
-#define LORA_PREAMBLE_LENGTH                        8         // Same for Tx and Rx
+#define LORA_PREAMBLE_LENGTH                        16         // Same for Tx and Rx
 #define LORA_SYMBOL_TIMEOUT                         0         // Symbols
 #define LORA_FIX_LENGTH_PAYLOAD_ON                  false
 #define LORA_IQ_INVERSION_ON                        false
 
 
 #define RX_TIMEOUT_VALUE                            1000
-#define BUFFER_SIZE                                 101 // Define the payload size here
+#define BUFFER_SIZE                                 110 // Define the payload size here
 
 #define VBAT_READ 1
 #define ADC_CTRL 2
@@ -209,3 +209,4 @@ void OnTxTimeout( void )
   Serial.println("TX Timeout......");
   lora_idle = true;
 }
+
